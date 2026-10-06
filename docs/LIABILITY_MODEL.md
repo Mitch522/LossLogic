@@ -2,7 +2,7 @@
 
 ## Objective
 
-ClaimIQ separates source evidence from derived findings and professional liability conclusions.
+LossLogic separates source evidence from derived findings and professional liability conclusions.
 
 Liability percentages are not treated as mathematically precise outputs derived from arbitrary point values. Instead, the system identifies supported findings, evaluates the relative contribution of each driver's conduct, and records the rationale for the resulting assessment.
 

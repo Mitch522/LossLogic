@@ -7,7 +7,7 @@
     "loss_location": "Tampa, Florida"
   },
   "evaluation_metadata": {
-    "system": "ClaimIQ",
+    "system": "LossLogic",
     "evaluation_type": "demonstration",
     "generated_at": "2026-10-06T19:08:06.517993+00:00",
     "synthetic_data": true
@@ -299,7 +299,7 @@
           "MED-002"
         ],
         "included_in_evaluation": false,
-        "exclusion_reason": "Bundled service in the ClaimIQ demonstration schedule",
+        "exclusion_reason": "Bundled service in the LossLogic demonstration schedule",
         "allowed_amount": 0.0,
         "pip_paid": 0.0,
         "remaining_specials": 0.0
@@ -546,7 +546,7 @@
           "MED-002"
         ],
         "included_in_evaluation": false,
-        "exclusion_reason": "Bundled service in the ClaimIQ demonstration schedule",
+        "exclusion_reason": "Bundled service in the LossLogic demonstration schedule",
         "allowed_amount": 0.0,
         "pip_paid": 0.0,
         "remaining_specials": 0.0,

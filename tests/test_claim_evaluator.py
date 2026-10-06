@@ -20,7 +20,7 @@ def test_complete_claim_evaluation():
     assert result["claim"]["jurisdiction"] == "Florida"
 
     # Demonstration safeguards
-    assert result["evaluation_metadata"]["system"] == "ClaimIQ"
+    assert result["evaluation_metadata"]["system"] == "LossLogic"
     assert result["evaluation_metadata"]["synthetic_data"] is True
 
     # Coverage
@@ -74,4 +74,4 @@ def test_complete_claim_evaluation():
 
 if __name__ == "__main__":
     test_complete_claim_evaluation()
-    print("PASS: Complete ClaimIQ evaluation is correct.")
+    print("PASS: Complete LossLogic evaluation is correct.")

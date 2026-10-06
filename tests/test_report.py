@@ -34,7 +34,7 @@ def test_report():
     # Review status
     assert "No automated validation or review flags were identified" in report
 
-    print("PASS: ClaimIQ report is correct.")
+    print("PASS: LossLogic report is correct.")
 
 
 if __name__ == "__main__":

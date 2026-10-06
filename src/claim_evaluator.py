@@ -127,7 +127,7 @@ def evaluate_claim() -> dict[str, Any]:
             "loss_location": claim["loss_location"],
         },
         "evaluation_metadata": {
-            "system": "ClaimIQ",
+            "system": "LossLogic",
             "evaluation_type": "demonstration",
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "synthetic_data": True,

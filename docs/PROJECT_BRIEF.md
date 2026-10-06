@@ -1,8 +1,8 @@
-# ClaimIQ Project Brief
+# LossLogic Project Brief
 
 ## Purpose
 
-ClaimIQ is an independently developed insurance technology portfolio project demonstrating how complex bodily injury claim information can be transformed into structured data and evaluated through reproducible business logic.
+LossLogic is an independently developed insurance technology portfolio project demonstrating how complex bodily injury claim information can be transformed into structured data and evaluated through reproducible business logic.
 
 The project uses entirely fictional and synthetic claim data.
 
@@ -24,7 +24,7 @@ Bodily injury claim evaluation requires information from multiple sources to be 
 - reasonable medical expenses
 - remaining medical specials
 
-ClaimIQ models these information sources separately and brings them together into a structured claim evaluation.
+LossLogic models these information sources separately and brings them together into a structured claim evaluation.
 
 ## Portfolio Goals
 

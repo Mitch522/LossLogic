@@ -1,22 +1,22 @@
-# ClaimIQ
+# LossLogic
 
 **Explainable, AI-ready bodily injury claim evaluation using structured insurance data and deterministic business logic.**
 
-ClaimIQ is an independently developed insurance technology portfolio project demonstrating how complex bodily injury claim information can be transformed into structured, traceable, and reproducible claim analysis.
+LossLogic is an independently developed insurance technology portfolio project demonstrating how complex bodily injury claim information can be transformed into structured, traceable, and reproducible claim analysis.
 
 It combines insurance domain expertise with Python-based evaluation logic to analyze coverage, liability, medical causation, billing, PIP payments, and causation-supported medical damages.
 
-**[View the ClaimIQ Portfolio Case Study](portfolio/ClaimIQ_Portfolio_Case_Study.pdf)**
+**[View the LossLogic Portfolio Case Study](portfolio/LossLogic_Portfolio_Case_Study.pdf)**
 
-> **Important:** ClaimIQ uses entirely fictional, synthetic claim data. It is a portfolio demonstration and is not intended to provide legal, medical, or claims-handling advice.
+> **Important:** LossLogic uses entirely fictional, synthetic claim data. It is a portfolio demonstration and is not intended to provide legal, medical, or claims-handling advice.
 
 ## The Problem
 
 Bodily injury claims require information from multiple sources to be evaluated together, including policy information, statements, accident mechanics, medical history, treatment records, diagnostic findings, bills, and payments.
 
-ClaimIQ demonstrates how those sources can be converted into structured evidence while preserving the reasoning behind each conclusion.
+LossLogic demonstrates how those sources can be converted into structured evidence while preserving the reasoning behind each conclusion.
 
-## What ClaimIQ Evaluates
+## What LossLogic Evaluates
 
 ### Coverage
 Evaluates policy period, covered vehicle, permissive use, bodily injury coverage, known exclusions, and applicable BI limits.
@@ -33,7 +33,7 @@ The analysis considers temporal relationship, pre-loss documentation, objective 
 Evaluates submitted charges, corrected and voided bills, duplicates, bundled services, reimbursement rules, PIP payments, and remaining allowable medical specials.
 
 ### Causation-Supported BI Medical Evaluation
-ClaimIQ deliberately separates **financial validity** from **medical causation**. A financially valid medical charge is not automatically treated as causation-supported bodily injury expense.
+LossLogic deliberately separates **financial validity** from **medical causation**. A financially valid medical charge is not automatically treated as causation-supported bodily injury expense.
 
 | Measure | Amount |
 | --- | ---: |
@@ -46,7 +46,7 @@ In the demonstration claim, a $350 orthopedic charge is financially allowable bu
 
 ## Architecture
 
-ClaimIQ separates three concepts:
+LossLogic separates three concepts:
 
 1. **Source evidence**: policy data, statements, medical records, bills, and payments.
 2. **Derived findings**: coverage requirements, liability facts, medical evidence signals, and reconciled billing.
@@ -57,7 +57,7 @@ This separation makes the evaluation easier to test, audit, explain, and extend.
 ## Project Structure
 
 ```text
-ClaimIQ/
+LossLogic/
 ├── data/
 │   ├── billing/
 │   ├── coverage/
@@ -88,19 +88,19 @@ ClaimIQ/
 
 ## Explainability and Traceability
 
-ClaimIQ is designed to show **why** a conclusion was reached. Liability conclusions link to source evidence, medical classifications link to supporting record IDs, billing decisions link to individual bills, and causation-supported expenses link to diagnosis classifications.
+LossLogic is designed to show **why** a conclusion was reached. Liability conclusions link to source evidence, medical classifications link to supporting record IDs, billing decisions link to individual bills, and causation-supported expenses link to diagnosis classifications.
 
 Evidence limitations are surfaced rather than silently ignored.
 
 ## AI-Ready Design
 
-ClaimIQ produces structured output that could support claims decision-support tools, adjuster review interfaces, AI-assisted claim summaries, medical chronology generation, claim QA workflows, analytics dashboards, and API-based insurance applications.
+LossLogic produces structured output that could support claims decision-support tools, adjuster review interfaces, AI-assisted claim summaries, medical chronology generation, claim QA workflows, analytics dashboards, and API-based insurance applications.
 
 The current version uses deterministic business rules so its behavior remains reproducible and explainable.
 
 ## Automated Testing
 
-ClaimIQ includes automated tests covering coverage, liability, medical causation, billing and PIP reconciliation, end-to-end claim evaluation, and human-readable report generation.
+LossLogic includes automated tests covering coverage, liability, medical causation, billing and PIP reconciliation, end-to-end claim evaluation, and human-readable report generation.
 
 ## Example Outputs
 
@@ -112,12 +112,12 @@ ClaimIQ includes automated tests covering coverage, liability, medical causation
 
 My background includes more than 15 years in insurance, including bodily injury liability, litigation, medical record review, coverage analysis, claim evaluation, and claims leadership.
 
-I built ClaimIQ to demonstrate how insurance domain knowledge can be translated into structured data, deterministic business logic, explainable decision support, automated testing, and AI-ready workflows.
+I built LossLogic to demonstrate how insurance domain knowledge can be translated into structured data, deterministic business logic, explainable decision support, automated testing, and AI-ready workflows.
 
 The goal is not simply to produce an answer. It is to preserve the evidence and reasoning a human claims professional would need to understand how that answer was reached.
 
 ## Disclaimer
 
-ClaimIQ is an independent portfolio project built with fictional and synthetic data. It is not affiliated with any insurer, employer, client, or other claims technology project.
+LossLogic is an independent portfolio project built with fictional and synthetic data. It is not affiliated with any insurer, employer, client, or other claims technology project.
 
 It is intended solely to demonstrate software design, insurance domain modeling, data transformation, automated testing, and explainable decision-support concepts.

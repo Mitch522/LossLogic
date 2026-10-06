@@ -1,5 +1,5 @@
 {
-  "schedule_name": "ClaimIQ Synthetic Reimbursement Schedule",
+  "schedule_name": "LossLogic Synthetic Reimbursement Schedule",
   "schedule_type": "DEMONSTRATION_ONLY",
   "rates": {
     "99204": {
@@ -21,7 +21,7 @@
     "97010": {
       "allowed_amount": 0.00,
       "separately_reimbursable": false,
-      "reason": "Bundled service in the ClaimIQ demonstration schedule"
+      "reason": "Bundled service in the LossLogic demonstration schedule"
     }
   }
 }

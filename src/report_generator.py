@@ -28,7 +28,7 @@ def generate_report():
 
     lines = []
 
-    lines.append("# ClaimIQ Claim Evaluation")
+    lines.append("# LossLogic Claim Evaluation")
     lines.append("")
     lines.append(
         "> Demonstration report generated from entirely fictional, "
@@ -290,7 +290,7 @@ def generate_report():
     lines.append("## Evaluation Summary")
     lines.append("")
     lines.append(
-        "ClaimIQ identified applicable bodily injury coverage and an "
+        "LossLogic identified applicable bodily injury coverage and an "
         f"{summary['insured_liability_percent']}/"
         f"{summary['claimant_comparative_negligence_percent']} liability "
         "assessment based on the available evidence."

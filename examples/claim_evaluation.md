@@ -1,4 +1,4 @@
-# ClaimIQ Claim Evaluation
+# LossLogic Claim Evaluation
 
 > Demonstration report generated from entirely fictional, synthetic claim data.
 
@@ -146,7 +146,7 @@ No automated validation or review flags were identified for this demonstration c
 
 ## Evaluation Summary
 
-ClaimIQ identified applicable bodily injury coverage and an 80/20 liability assessment based on the available evidence.
+LossLogic identified applicable bodily injury coverage and an 80/20 liability assessment based on the available evidence.
 
 The medical causation analysis identified 2 condition(s) as new or aggravated by the loss and 3 condition(s) as pre-existing, degenerative, or unrelated.
 
