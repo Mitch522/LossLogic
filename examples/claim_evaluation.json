@@ -1,0 +1,634 @@
+{
+  "claim": {
+    "claim_id": "CLM-DEMO-2026-001",
+    "claim_type": "AUTO_BODILY_INJURY",
+    "jurisdiction": "Florida",
+    "loss_date": "2026-03-18",
+    "loss_location": "Tampa, Florida"
+  },
+  "evaluation_metadata": {
+    "system": "ClaimIQ",
+    "evaluation_type": "demonstration",
+    "generated_at": "2026-10-06T19:08:06.517993+00:00",
+    "synthetic_data": true
+  },
+  "coverage": {
+    "claim_id": "CLM-DEMO-2026-001",
+    "policy_id": "POL-DEMO-001",
+    "coverage_type": "bodily_injury_liability",
+    "coverage_applies": true,
+    "requirements": {
+      "policy_active": true,
+      "loss_within_policy_period": true,
+      "covered_vehicle_involved": true,
+      "permissive_driver": true,
+      "bodily_injury_coverage_included": true,
+      "no_known_exclusion": true
+    },
+    "failed_requirements": [],
+    "limits": {
+      "per_person": 100000,
+      "per_accident": 300000
+    },
+    "coverage_issues": [],
+    "conclusion": "Bodily injury liability coverage applies based on the available policy and loss facts."
+  },
+  "liability": {
+    "primary_contributing_conduct": [
+      "The insured initiated the lane change during which contact occurred.",
+      "Independent witness evidence supports that the claimant already occupied the destination lane.",
+      "The insured reported seeing the claimant before beginning the maneuver.",
+      "Scene evidence places the contact during the insured's lateral movement.",
+      "The vehicle damage pattern is consistent with a sideswipe collision."
+    ],
+    "comparative_contributing_conduct": [
+      "The claimant acknowledged accelerating during the developing merge.",
+      "The independent witness also observed the claimant appearing to increase speed.",
+      "The claimant reported braking and moving left once the conflict became apparent."
+    ],
+    "material_evidence": [
+      "STMT-001",
+      "STMT-002",
+      "WIT-001",
+      "vehicle_damage.scene_evidence"
+    ],
+    "evidence_limitations": [
+      "The witness could not determine the exact spacing between the vehicles when the lane change began.",
+      "The witness could not confirm whether the insured's turn signal was activated."
+    ],
+    "assessment": {
+      "insured_liability_percent": 80,
+      "claimant_comparative_negligence_percent": 20,
+      "confidence": "MODERATE_HIGH",
+      "assessment_type": "professional_judgment"
+    },
+    "conclusion": "The insured's lane-change maneuver is the primary contributing cause of the collision. The claimant's acceleration during the developing merge supports comparative negligence."
+  },
+  "medical_causation": {
+    "MED-001": {
+      "condition": "cervical_strain",
+      "body_region": "cervical_spine",
+      "classification": "RELATED_NEW",
+      "reasons": [
+        "The condition was not documented before the loss.",
+        "Relevant post-loss evidence was documented 1 day after the loss.",
+        "The post-loss records contain supporting objective findings."
+      ],
+      "supporting_record_ids": [
+        "PRE-005",
+        "POST-001",
+        "POST-002",
+        "POST-003A",
+        "POST-005"
+      ]
+    },
+    "MED-002": {
+      "condition": "lumbar_disc_disorder",
+      "body_region": "lumbar_spine",
+      "classification": "AGGRAVATION",
+      "reasons": [
+        "The condition existed before the loss, but the post-loss evidence shows a material change from the documented baseline.",
+        "New neurologic findings are documented after the loss.",
+        "Post-loss imaging demonstrates a material change from pre-loss imaging."
+      ],
+      "supporting_record_ids": [
+        "PRE-001",
+        "PRE-003",
+        "PRE-005",
+        "POST-001",
+        "POST-002",
+        "POST-003",
+        "POST-003A",
+        "POST-005"
+      ]
+    },
+    "MED-003": {
+      "condition": "chronic_rotator_cuff_tendinopathy",
+      "body_region": "right_shoulder",
+      "classification": "PREEXISTING",
+      "reasons": [
+        "The condition was documented before the loss.",
+        "Subjective worsening is reported, but the available evidence does not demonstrate a material objective change."
+      ],
+      "supporting_record_ids": [
+        "PRE-001",
+        "PRE-002",
+        "PRE-005",
+        "POST-001",
+        "POST-002",
+        "POST-004"
+      ]
+    },
+    "MED-004": {
+      "condition": "osteoarthritis",
+      "body_region": "right_knee",
+      "classification": "DEGENERATIVE",
+      "reasons": [
+        "The condition was documented before the loss and the post-loss records do not show a material acute objective or imaging change.",
+        "The available findings are primarily degenerative in character."
+      ],
+      "supporting_record_ids": [
+        "PRE-004",
+        "POST-001",
+        "POST-004"
+      ]
+    },
+    "MED-005": {
+      "condition": "distal_radius_fracture",
+      "body_region": "left_wrist",
+      "classification": "UNRELATED",
+      "reasons": [
+        "A separate post-loss event provides a direct causal explanation for the condition."
+      ],
+      "supporting_record_ids": [
+        "PRE-005",
+        "POST-006"
+      ]
+    }
+  },
+  "financials": {
+    "reconciled_bills": [
+      {
+        "bill_id": "BILL-001",
+        "provider": "Tampa Immediate Care",
+        "date_of_service": "2026-03-19",
+        "procedure_code": "99204",
+        "billed_amount": 485.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-001"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002",
+          "MED-003",
+          "MED-004"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0
+      },
+      {
+        "bill_id": "BILL-002",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-03-26",
+        "procedure_code": "99204",
+        "billed_amount": 525.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-002"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002",
+          "MED-003"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0
+      },
+      {
+        "bill_id": "BILL-003",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-03-26",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-002"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 125.0,
+        "pip_paid": 100.0,
+        "remaining_specials": 25.0
+      },
+      {
+        "bill_id": "BILL-004",
+        "provider": "Bay Imaging Center",
+        "date_of_service": "2026-04-08",
+        "procedure_code": "72148",
+        "billed_amount": 1850.0,
+        "status": "VOIDED",
+        "medical_record_ids": [
+          "POST-003"
+        ],
+        "diagnosis_ids": [
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Voided charge replaced by corrected billing.",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0
+      },
+      {
+        "bill_id": "BILL-005",
+        "provider": "Bay Imaging Center",
+        "date_of_service": "2026-04-08",
+        "procedure_code": "72148",
+        "billed_amount": 1650.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003"
+        ],
+        "diagnosis_ids": [
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 900.0,
+        "pip_paid": 720.0,
+        "remaining_specials": 180.0
+      },
+      {
+        "bill_id": "BILL-006",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 125.0,
+        "pip_paid": 100.0,
+        "remaining_specials": 25.0
+      },
+      {
+        "bill_id": "BILL-007",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "DUPLICATE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Duplicate charge.",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0
+      },
+      {
+        "bill_id": "BILL-008",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97010",
+        "billed_amount": 75.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Bundled service in the ClaimIQ demonstration schedule",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0
+      },
+      {
+        "bill_id": "BILL-009",
+        "provider": "Tampa Orthopedic Group",
+        "date_of_service": "2026-04-14",
+        "procedure_code": "99204",
+        "billed_amount": 575.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-004"
+        ],
+        "diagnosis_ids": [
+          "MED-003",
+          "MED-004"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0
+      },
+      {
+        "bill_id": "BILL-010",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-05-12",
+        "procedure_code": "99214",
+        "billed_amount": 325.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-005"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 225.0,
+        "pip_paid": 180.0,
+        "remaining_specials": 45.0
+      }
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    },
+    "summary": {
+      "total_submitted_charges": 6115.0,
+      "excluded_voided_charges": 1850.0,
+      "excluded_duplicate_charges": 210.0,
+      "active_charges_before_bundling": 4055.0,
+      "excluded_bundled_charges": 75.0,
+      "total_allowed_medical_expenses": 2425.0,
+      "total_pip_paid": 1940.0,
+      "remaining_allowable_medical_specials": 485.0,
+      "pip_limit": 10000.0,
+      "pip_limit_remaining": 8060.0
+    }
+  },
+  "bi_damages": {
+    "bills": [
+      {
+        "bill_id": "BILL-001",
+        "provider": "Tampa Immediate Care",
+        "date_of_service": "2026-03-19",
+        "procedure_code": "99204",
+        "billed_amount": 485.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-001"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002",
+          "MED-003",
+          "MED-004"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-002",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-03-26",
+        "procedure_code": "99204",
+        "billed_amount": 525.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-002"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002",
+          "MED-003"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-003",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-03-26",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-002"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 125.0,
+        "pip_paid": 100.0,
+        "remaining_specials": 25.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-004",
+        "provider": "Bay Imaging Center",
+        "date_of_service": "2026-04-08",
+        "procedure_code": "72148",
+        "billed_amount": 1850.0,
+        "status": "VOIDED",
+        "medical_record_ids": [
+          "POST-003"
+        ],
+        "diagnosis_ids": [
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Voided charge replaced by corrected billing.",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-005",
+        "provider": "Bay Imaging Center",
+        "date_of_service": "2026-04-08",
+        "procedure_code": "72148",
+        "billed_amount": 1650.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003"
+        ],
+        "diagnosis_ids": [
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 900.0,
+        "pip_paid": 720.0,
+        "remaining_specials": 180.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-006",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 125.0,
+        "pip_paid": 100.0,
+        "remaining_specials": 25.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-007",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97110",
+        "billed_amount": 210.0,
+        "status": "DUPLICATE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Duplicate charge.",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-008",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-04-10",
+        "procedure_code": "97010",
+        "billed_amount": 75.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-003A"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": false,
+        "exclusion_reason": "Bundled service in the ClaimIQ demonstration schedule",
+        "allowed_amount": 0.0,
+        "pip_paid": 0.0,
+        "remaining_specials": 0.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      },
+      {
+        "bill_id": "BILL-009",
+        "provider": "Tampa Orthopedic Group",
+        "date_of_service": "2026-04-14",
+        "procedure_code": "99204",
+        "billed_amount": 575.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-004"
+        ],
+        "diagnosis_ids": [
+          "MED-003",
+          "MED-004"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 350.0,
+        "pip_paid": 280.0,
+        "remaining_specials": 70.0,
+        "accident_related": false,
+        "related_diagnosis_ids": []
+      },
+      {
+        "bill_id": "BILL-010",
+        "provider": "Gulf Coast Rehabilitation",
+        "date_of_service": "2026-05-12",
+        "procedure_code": "99214",
+        "billed_amount": 325.0,
+        "status": "ACTIVE",
+        "medical_record_ids": [
+          "POST-005"
+        ],
+        "diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ],
+        "included_in_evaluation": true,
+        "allowed_amount": 225.0,
+        "pip_paid": 180.0,
+        "remaining_specials": 45.0,
+        "accident_related": true,
+        "related_diagnosis_ids": [
+          "MED-001",
+          "MED-002"
+        ]
+      }
+    ],
+    "summary": {
+      "accident_related_allowed_medical_expenses": 2075.0,
+      "accident_related_pip_paid": 1660.0,
+      "accident_related_remaining_medical_specials": 415.0
+    }
+  },
+  "claim_summary": {
+    "coverage_applies": true,
+    "per_person_bi_limit": 100000,
+    "insured_liability_percent": 80,
+    "claimant_comparative_negligence_percent": 20,
+    "related_diagnosis_ids": [
+      "MED-001",
+      "MED-002"
+    ],
+    "non_related_diagnosis_ids": [
+      "MED-003",
+      "MED-004",
+      "MED-005"
+    ],
+    "allowed_medical_expenses": 2425.0,
+    "pip_paid": 1940.0,
+    "remaining_allowable_medical_specials": 485.0,
+    "accident_related_allowed_medical_expenses": 2075.0,
+    "accident_related_pip_paid": 1660.0,
+    "accident_related_remaining_medical_specials": 415.0,
+    "requires_additional_review": false,
+    "review_flags": []
+  }
+}

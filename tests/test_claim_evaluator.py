@@ -48,6 +48,24 @@ def test_complete_claim_evaluation():
     assert summary["pip_paid"] == 1940.00
     assert summary["remaining_allowable_medical_specials"] == 485.00
 
+    # Causation-aware BI damages
+    assert summary["accident_related_allowed_medical_expenses"] == 2075.00
+    assert summary["accident_related_pip_paid"] == 1660.00
+    assert summary["accident_related_remaining_medical_specials"] == 415.00
+
+    bi_bills = {
+        bill["bill_id"]: bill
+        for bill in result["bi_damages"]["bills"]
+    }
+
+    assert bi_bills["BILL-005"]["accident_related"] is True
+    assert bi_bills["BILL-005"]["related_diagnosis_ids"] == ["MED-002"]
+
+    assert bi_bills["BILL-009"]["included_in_evaluation"] is True
+    assert bi_bills["BILL-009"]["allowed_amount"] == 350.00
+    assert bi_bills["BILL-009"]["accident_related"] is False
+    assert bi_bills["BILL-009"]["related_diagnosis_ids"] == []
+
     # Validation / review
     assert result["financials"]["validation"]["passed"] is True
     assert summary["requires_additional_review"] is False

@@ -39,6 +39,58 @@ def evaluate_claim() -> dict[str, Any]:
         in {"PREEXISTING", "DEGENERATIVE", "UNRELATED"}
     ]
 
+    related_classifications = {"RELATED_NEW", "AGGRAVATION"}
+
+    bi_medical_bills = []
+    accident_related_allowed = 0.0
+    accident_related_pip_paid = 0.0
+    accident_related_remaining_specials = 0.0
+
+    for bill in billing["reconciled_bills"]:
+        diagnosis_ids = bill.get("diagnosis_ids", [])
+
+        related_diagnosis_ids = [
+            diagnosis_id
+            for diagnosis_id in diagnosis_ids
+            if (
+                diagnosis_id in medical_causation
+                and medical_causation[diagnosis_id]["classification"]
+                in related_classifications
+            )
+        ]
+
+        accident_related = bool(related_diagnosis_ids)
+
+        bi_bill = dict(bill)
+        bi_bill["accident_related"] = accident_related
+        bi_bill["related_diagnosis_ids"] = related_diagnosis_ids
+
+        if bill["included_in_evaluation"] and accident_related:
+            allowed = bill["allowed_amount"] or 0.0
+            pip_paid = bill["pip_paid"] or 0.0
+            remaining = bill["remaining_specials"] or 0.0
+
+            accident_related_allowed += allowed
+            accident_related_pip_paid += pip_paid
+            accident_related_remaining_specials += remaining
+
+        bi_medical_bills.append(bi_bill)
+
+    bi_damages = {
+        "bills": bi_medical_bills,
+        "summary": {
+            "accident_related_allowed_medical_expenses": round(
+                accident_related_allowed, 2
+            ),
+            "accident_related_pip_paid": round(
+                accident_related_pip_paid, 2
+            ),
+            "accident_related_remaining_medical_specials": round(
+                accident_related_remaining_specials, 2
+            ),
+        },
+    }
+
     review_flags = []
 
     if not coverage["coverage_applies"]:
@@ -84,6 +136,7 @@ def evaluate_claim() -> dict[str, Any]:
         "liability": liability,
         "medical_causation": medical_causation,
         "financials": billing,
+        "bi_damages": bi_damages,
         "claim_summary": {
             "coverage_applies": coverage["coverage_applies"],
             "per_person_bi_limit": coverage["limits"]["per_person"],
@@ -104,6 +157,15 @@ def evaluate_claim() -> dict[str, Any]:
             "remaining_allowable_medical_specials": billing["summary"][
                 "remaining_allowable_medical_specials"
             ],
+            "accident_related_allowed_medical_expenses": bi_damages[
+                "summary"
+            ]["accident_related_allowed_medical_expenses"],
+            "accident_related_pip_paid": bi_damages["summary"][
+                "accident_related_pip_paid"
+            ],
+            "accident_related_remaining_medical_specials": bi_damages[
+                "summary"
+            ]["accident_related_remaining_medical_specials"],
             "requires_additional_review": bool(review_flags),
             "review_flags": review_flags,
         },

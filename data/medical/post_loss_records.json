@@ -64,6 +64,23 @@
       }
     },
     {
+      "record_id": "POST-003A",
+      "date": "2026-04-10",
+      "days_from_loss": 23,
+      "provider_type": "physical_medicine",
+      "reason_for_visit": "therapeutic_treatment",
+      "findings": {
+        "cervical_spine": {
+          "symptoms": "continued_neck_pain_and_stiffness",
+          "treatment": "therapeutic_exercise_and_conservative_modalities"
+        },
+        "lumbar_spine": {
+          "symptoms": "continued_low_back_pain_with_right_leg_symptoms",
+          "treatment": "therapeutic_exercise_and_conservative_modalities"
+        }
+      }
+    },
+    {
       "record_id": "POST-004",
       "date": "2026-04-14",
       "days_from_loss": 27,

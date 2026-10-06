@@ -54,6 +54,8 @@ def reconcile_billing() -> dict[str, Any]:
             "procedure_code": procedure_code,
             "billed_amount": billed_amount,
             "status": status,
+            "medical_record_ids": bill.get("medical_record_ids", []),
+            "diagnosis_ids": bill.get("diagnosis_ids", []),
         }
 
         if status == "VOIDED":

@@ -108,9 +108,11 @@ def classify_diagnosis(
         reasons.append(
             "The condition was not documented before the loss."
         )
+        days = evidence["days_to_first_post_loss_record"]
+        day_label = "day" if days == 1 else "days"
         reasons.append(
             f"Relevant post-loss evidence was documented "
-            f"{evidence['days_to_first_post_loss_record']} day(s) after the loss."
+            f"{days} {day_label} after the loss."
         )
         reasons.append(
             "The post-loss records contain supporting objective findings."

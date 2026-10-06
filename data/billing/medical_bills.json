@@ -6,8 +6,17 @@
       "date_of_service": "2026-03-19",
       "procedure_code": "99204",
       "description": "Initial evaluation",
-      "billed_amount": 485.00,
-      "status": "ACTIVE"
+      "billed_amount": 485.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-001"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002",
+        "MED-003",
+        "MED-004"
+      ]
     },
     {
       "bill_id": "BILL-002",
@@ -15,8 +24,16 @@
       "date_of_service": "2026-03-26",
       "procedure_code": "99204",
       "description": "Initial physical medicine evaluation",
-      "billed_amount": 525.00,
-      "status": "ACTIVE"
+      "billed_amount": 525.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-002"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002",
+        "MED-003"
+      ]
     },
     {
       "bill_id": "BILL-003",
@@ -24,8 +41,15 @@
       "date_of_service": "2026-03-26",
       "procedure_code": "97110",
       "description": "Therapeutic exercise",
-      "billed_amount": 210.00,
-      "status": "ACTIVE"
+      "billed_amount": 210.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-002"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-004",
@@ -33,9 +57,15 @@
       "date_of_service": "2026-04-08",
       "procedure_code": "72148",
       "description": "Lumbar MRI",
-      "billed_amount": 1850.00,
+      "billed_amount": 1850.0,
       "status": "VOIDED",
-      "replacement_bill_id": "BILL-005"
+      "replacement_bill_id": "BILL-005",
+      "medical_record_ids": [
+        "POST-003"
+      ],
+      "diagnosis_ids": [
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-005",
@@ -43,9 +73,15 @@
       "date_of_service": "2026-04-08",
       "procedure_code": "72148",
       "description": "Lumbar MRI corrected charge",
-      "billed_amount": 1650.00,
+      "billed_amount": 1650.0,
       "status": "ACTIVE",
-      "replaces_bill_id": "BILL-004"
+      "replaces_bill_id": "BILL-004",
+      "medical_record_ids": [
+        "POST-003"
+      ],
+      "diagnosis_ids": [
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-006",
@@ -53,8 +89,15 @@
       "date_of_service": "2026-04-10",
       "procedure_code": "97110",
       "description": "Therapeutic exercise",
-      "billed_amount": 210.00,
-      "status": "ACTIVE"
+      "billed_amount": 210.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-003A"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-007",
@@ -62,9 +105,16 @@
       "date_of_service": "2026-04-10",
       "procedure_code": "97110",
       "description": "Therapeutic exercise duplicate submission",
-      "billed_amount": 210.00,
+      "billed_amount": 210.0,
       "status": "DUPLICATE",
-      "duplicate_of_bill_id": "BILL-006"
+      "duplicate_of_bill_id": "BILL-006",
+      "medical_record_ids": [
+        "POST-003A"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-008",
@@ -72,9 +122,16 @@
       "date_of_service": "2026-04-10",
       "procedure_code": "97010",
       "description": "Hot or cold pack",
-      "billed_amount": 75.00,
+      "billed_amount": 75.0,
       "status": "ACTIVE",
-      "bundled_into_bill_id": "BILL-006"
+      "bundled_into_bill_id": "BILL-006",
+      "medical_record_ids": [
+        "POST-003A"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002"
+      ]
     },
     {
       "bill_id": "BILL-009",
@@ -82,8 +139,15 @@
       "date_of_service": "2026-04-14",
       "procedure_code": "99204",
       "description": "Orthopedic evaluation",
-      "billed_amount": 575.00,
-      "status": "ACTIVE"
+      "billed_amount": 575.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-004"
+      ],
+      "diagnosis_ids": [
+        "MED-003",
+        "MED-004"
+      ]
     },
     {
       "bill_id": "BILL-010",
@@ -91,8 +155,15 @@
       "date_of_service": "2026-05-12",
       "procedure_code": "99214",
       "description": "Follow-up evaluation",
-      "billed_amount": 325.00,
-      "status": "ACTIVE"
+      "billed_amount": 325.0,
+      "status": "ACTIVE",
+      "medical_record_ids": [
+        "POST-005"
+      ],
+      "diagnosis_ids": [
+        "MED-001",
+        "MED-002"
+      ]
     }
   ]
 }
