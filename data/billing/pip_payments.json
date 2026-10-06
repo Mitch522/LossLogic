@@ -1,0 +1,44 @@
+{
+  "pip_policy": {
+    "limit": 10000.00,
+    "payment_percentage": 0.80,
+    "deductible": 0.00
+  },
+  "payments": [
+    {
+      "payment_id": "PIP-001",
+      "bill_id": "BILL-001",
+      "paid_amount": 280.00
+    },
+    {
+      "payment_id": "PIP-002",
+      "bill_id": "BILL-002",
+      "paid_amount": 280.00
+    },
+    {
+      "payment_id": "PIP-003",
+      "bill_id": "BILL-003",
+      "paid_amount": 100.00
+    },
+    {
+      "payment_id": "PIP-004",
+      "bill_id": "BILL-005",
+      "paid_amount": 720.00
+    },
+    {
+      "payment_id": "PIP-005",
+      "bill_id": "BILL-006",
+      "paid_amount": 100.00
+    },
+    {
+      "payment_id": "PIP-006",
+      "bill_id": "BILL-009",
+      "paid_amount": 280.00
+    },
+    {
+      "payment_id": "PIP-007",
+      "bill_id": "BILL-010",
+      "paid_amount": 180.00
+    }
+  ]
+}

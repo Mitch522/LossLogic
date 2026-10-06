@@ -1,0 +1,27 @@
+{
+  "schedule_name": "ClaimIQ Synthetic Reimbursement Schedule",
+  "schedule_type": "DEMONSTRATION_ONLY",
+  "rates": {
+    "99204": {
+      "allowed_amount": 350.00,
+      "separately_reimbursable": true
+    },
+    "99214": {
+      "allowed_amount": 225.00,
+      "separately_reimbursable": true
+    },
+    "97110": {
+      "allowed_amount": 125.00,
+      "separately_reimbursable": true
+    },
+    "72148": {
+      "allowed_amount": 900.00,
+      "separately_reimbursable": true
+    },
+    "97010": {
+      "allowed_amount": 0.00,
+      "separately_reimbursable": false,
+      "reason": "Bundled service in the ClaimIQ demonstration schedule"
+    }
+  }
+}

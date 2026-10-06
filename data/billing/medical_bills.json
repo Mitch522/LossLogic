@@ -1,0 +1,98 @@
+{
+  "billing_records": [
+    {
+      "bill_id": "BILL-001",
+      "provider": "Tampa Immediate Care",
+      "date_of_service": "2026-03-19",
+      "procedure_code": "99204",
+      "description": "Initial evaluation",
+      "billed_amount": 485.00,
+      "status": "ACTIVE"
+    },
+    {
+      "bill_id": "BILL-002",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-03-26",
+      "procedure_code": "99204",
+      "description": "Initial physical medicine evaluation",
+      "billed_amount": 525.00,
+      "status": "ACTIVE"
+    },
+    {
+      "bill_id": "BILL-003",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-03-26",
+      "procedure_code": "97110",
+      "description": "Therapeutic exercise",
+      "billed_amount": 210.00,
+      "status": "ACTIVE"
+    },
+    {
+      "bill_id": "BILL-004",
+      "provider": "Bay Imaging Center",
+      "date_of_service": "2026-04-08",
+      "procedure_code": "72148",
+      "description": "Lumbar MRI",
+      "billed_amount": 1850.00,
+      "status": "VOIDED",
+      "replacement_bill_id": "BILL-005"
+    },
+    {
+      "bill_id": "BILL-005",
+      "provider": "Bay Imaging Center",
+      "date_of_service": "2026-04-08",
+      "procedure_code": "72148",
+      "description": "Lumbar MRI corrected charge",
+      "billed_amount": 1650.00,
+      "status": "ACTIVE",
+      "replaces_bill_id": "BILL-004"
+    },
+    {
+      "bill_id": "BILL-006",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-04-10",
+      "procedure_code": "97110",
+      "description": "Therapeutic exercise",
+      "billed_amount": 210.00,
+      "status": "ACTIVE"
+    },
+    {
+      "bill_id": "BILL-007",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-04-10",
+      "procedure_code": "97110",
+      "description": "Therapeutic exercise duplicate submission",
+      "billed_amount": 210.00,
+      "status": "DUPLICATE",
+      "duplicate_of_bill_id": "BILL-006"
+    },
+    {
+      "bill_id": "BILL-008",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-04-10",
+      "procedure_code": "97010",
+      "description": "Hot or cold pack",
+      "billed_amount": 75.00,
+      "status": "ACTIVE",
+      "bundled_into_bill_id": "BILL-006"
+    },
+    {
+      "bill_id": "BILL-009",
+      "provider": "Tampa Orthopedic Group",
+      "date_of_service": "2026-04-14",
+      "procedure_code": "99204",
+      "description": "Orthopedic evaluation",
+      "billed_amount": 575.00,
+      "status": "ACTIVE"
+    },
+    {
+      "bill_id": "BILL-010",
+      "provider": "Gulf Coast Rehabilitation",
+      "date_of_service": "2026-05-12",
+      "procedure_code": "99214",
+      "description": "Follow-up evaluation",
+      "billed_amount": 325.00,
+      "status": "ACTIVE"
+    }
+  ]
+}
