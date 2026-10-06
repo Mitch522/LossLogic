@@ -6,6 +6,8 @@ ClaimIQ is an independently developed insurance technology portfolio project dem
 
 It combines insurance domain expertise with Python-based evaluation logic to analyze coverage, liability, medical causation, billing, PIP payments, and causation-supported medical damages.
 
+**[View the ClaimIQ Portfolio Case Study](portfolio/ClaimIQ_Portfolio_Case_Study.pdf)**
+
 > **Important:** ClaimIQ uses entirely fictional, synthetic claim data. It is a portfolio demonstration and is not intended to provide legal, medical, or claims-handling advice.
 
 ## The Problem
