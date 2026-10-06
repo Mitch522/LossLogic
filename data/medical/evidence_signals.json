@@ -1,0 +1,72 @@
+{
+  "MED-001": {
+    "new_post_loss_symptoms": true,
+    "new_objective_findings": true,
+    "new_neurologic_findings": false,
+    "material_imaging_change": false,
+    "separate_causal_event": false,
+    "supporting_record_ids": [
+      "PRE-005",
+      "POST-001",
+      "POST-002",
+      "POST-005"
+    ]
+  },
+  "MED-002": {
+    "new_post_loss_symptoms": true,
+    "new_objective_findings": true,
+    "new_neurologic_findings": true,
+    "material_imaging_change": true,
+    "separate_causal_event": false,
+    "supporting_record_ids": [
+      "PRE-001",
+      "PRE-003",
+      "PRE-005",
+      "POST-001",
+      "POST-002",
+      "POST-003",
+      "POST-005"
+    ]
+  },
+  "MED-003": {
+    "new_post_loss_symptoms": false,
+    "subjective_worsening": true,
+    "new_objective_findings": false,
+    "new_neurologic_findings": false,
+    "material_imaging_change": false,
+    "separate_causal_event": false,
+    "supporting_record_ids": [
+      "PRE-001",
+      "PRE-002",
+      "PRE-005",
+      "POST-001",
+      "POST-002",
+      "POST-004"
+    ]
+  },
+  "MED-004": {
+    "new_post_loss_symptoms": false,
+    "subjective_worsening": false,
+    "new_objective_findings": false,
+    "new_neurologic_findings": false,
+    "material_imaging_change": false,
+    "degenerative_findings": true,
+    "separate_causal_event": false,
+    "supporting_record_ids": [
+      "PRE-004",
+      "POST-001",
+      "POST-004"
+    ]
+  },
+  "MED-005": {
+    "new_post_loss_symptoms": true,
+    "new_objective_findings": true,
+    "new_neurologic_findings": false,
+    "material_imaging_change": true,
+    "separate_causal_event": true,
+    "supporting_record_ids": [
+      "PRE-005",
+      "POST-006"
+    ]
+  }
+}

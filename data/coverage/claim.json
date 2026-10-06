@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM-DEMO-2026-001",
+  "claim_type": "AUTO_BODILY_INJURY",
+  "jurisdiction": "Florida",
+  "loss_date": "2026-03-18",
+  "loss_location": "Tampa, Florida",
+  "claimant": {
+    "claimant_id": "CLMNT-001",
+    "age_at_loss": 39,
+    "vehicle_role": "claimant_vehicle_driver"
+  },
+  "insured": {
+    "insured_id": "INS-001",
+    "vehicle_role": "insured_vehicle_driver"
+  },
+  "loss_description": "Two vehicles made side contact during a lane-change and merge sequence on a multilane roadway. The insured vehicle was moving into the claimant vehicle's lane when contact occurred. Evidence also indicates the claimant accelerated during the developing merge."
+}

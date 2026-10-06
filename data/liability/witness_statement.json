@@ -1,0 +1,15 @@
+{
+  "statement_id": "WIT-001",
+  "witness_type": "independent_driver",
+  "relationship_to_parties": "none",
+  "position": "traveling_behind_both_vehicles",
+  "observations": {
+    "insured_vehicle_changed_lanes": true,
+    "claimant_vehicle_was_already_in_destination_lane": true,
+    "claimant_appeared_to_increase_speed": true,
+    "insured_turn_signal_observed": "unknown",
+    "exact_vehicle_spacing_before_merge": "unknown",
+    "contact_observed": true
+  },
+  "narrative": "The witness reported traveling behind both vehicles and observed the insured vehicle begin moving into the lane occupied by the claimant. The witness also recalled the claimant vehicle appearing to increase speed as the vehicles approached one another. The witness could not determine the exact spacing between the vehicles when the lane change began and did not recall whether the insured vehicle's turn signal was activated."
+}

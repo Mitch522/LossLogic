@@ -1,0 +1,42 @@
+{
+  "vehicles": [
+    {
+      "vehicle_id": "VEH-INS-001",
+      "party": "insured",
+      "damage": [
+        {
+          "area": "left_front_corner",
+          "components": [
+            "front_bumper",
+            "left_front_fender"
+          ],
+          "damage_pattern": "rearward_scraping_and_transfer",
+          "severity": "moderate"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "VEH-CLM-001",
+      "party": "claimant",
+      "damage": [
+        {
+          "area": "right_side",
+          "components": [
+            "right_front_door",
+            "right_rear_door"
+          ],
+          "damage_pattern": "longitudinal_scraping_and_transfer",
+          "severity": "moderate"
+        }
+      ]
+    }
+  ],
+  "scene_evidence": {
+    "impact_type": "sideswipe",
+    "roadway": "three_lane_same_direction_roadway",
+    "insured_origin_lane": "right_lane",
+    "claimant_origin_lane": "center_lane",
+    "contact_occurred_during_lane_change": true,
+    "post_impact_vehicle_rotation": false
+  }
+}

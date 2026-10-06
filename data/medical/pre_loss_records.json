@@ -1,0 +1,85 @@
+{
+  "records": [
+    {
+      "record_id": "PRE-001",
+      "date": "2025-06-12",
+      "provider_type": "primary_care",
+      "reason_for_visit": "annual_exam",
+      "findings": {
+        "lumbar_spine": {
+          "symptoms": "intermittent_low_back_aching",
+          "neurologic_symptoms": false,
+          "objective_exam": "normal_strength_and_sensation"
+        },
+        "right_shoulder": {
+          "symptoms": "intermittent_pain_with_overhead_activity",
+          "objective_exam": "mild_pain_with_resisted_abduction"
+        }
+      }
+    },
+    {
+      "record_id": "PRE-002",
+      "date": "2025-08-04",
+      "provider_type": "orthopedics",
+      "reason_for_visit": "right_shoulder_pain",
+      "findings": {
+        "right_shoulder": {
+          "diagnosis": "chronic_rotator_cuff_tendinopathy",
+          "range_of_motion": "full",
+          "strength": "5/5",
+          "imaging": "mild_chronic_tendinopathic_change_without_acute_abnormality"
+        }
+      }
+    },
+    {
+      "record_id": "PRE-003",
+      "date": "2025-10-19",
+      "provider_type": "radiology",
+      "reason_for_visit": "lumbar_mri",
+      "findings": {
+        "lumbar_spine": {
+          "l4_l5": "mild_disc_bulge_without_nerve_root_contact",
+          "l5_s1": "mild_disc_desiccation",
+          "stenosis": "none",
+          "acute_findings": "none"
+        }
+      }
+    },
+    {
+      "record_id": "PRE-004",
+      "date": "2026-01-09",
+      "provider_type": "orthopedics",
+      "reason_for_visit": "right_knee_pain",
+      "findings": {
+        "right_knee": {
+          "diagnosis": "osteoarthritis",
+          "imaging": "moderate_medial_compartment_joint_space_narrowing_and_osteophytes",
+          "acute_injury": false
+        }
+      }
+    },
+    {
+      "record_id": "PRE-005",
+      "date": "2026-02-02",
+      "provider_type": "primary_care",
+      "reason_for_visit": "follow_up",
+      "findings": {
+        "lumbar_spine": {
+          "symptoms": "occasional_low_back_stiffness",
+          "radicular_symptoms": false,
+          "objective_exam": "normal_lower_extremity_strength_and_sensation"
+        },
+        "right_shoulder": {
+          "symptoms": "continued_intermittent_pain_with_overhead_activity",
+          "objective_exam": "full_range_of_motion_and_5/5_strength"
+        },
+        "cervical_spine": {
+          "symptoms": "none_reported"
+        },
+        "left_wrist": {
+          "symptoms": "none_reported"
+        }
+      }
+    }
+  ]
+}

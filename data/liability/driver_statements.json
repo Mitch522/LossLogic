@@ -1,0 +1,36 @@
+{
+  "statements": [
+    {
+      "statement_id": "STMT-001",
+      "party": "insured",
+      "driver_id": "INS-001",
+      "account": {
+        "travel_lane": "right_lane",
+        "intended_movement": "merge_left",
+        "turn_signal_used": true,
+        "mirror_check_reported": true,
+        "claimant_seen_before_maneuver": true,
+        "claimant_position_when_first_seen": "slightly_behind_insured_vehicle",
+        "insured_estimate_of_lane_entry_pct_at_contact": 60,
+        "reported_claimant_action": "accelerated_as_insured_entered_lane"
+      },
+      "narrative": "The insured reported activating the left turn signal and beginning a gradual lane change after checking the mirror. The insured recalled seeing the claimant vehicle slightly behind in the adjacent lane and believed there was sufficient space to merge. The insured estimated the vehicle was more than halfway into the lane when the claimant accelerated and contact occurred."
+    },
+    {
+      "statement_id": "STMT-002",
+      "party": "claimant",
+      "driver_id": "CLMNT-001",
+      "account": {
+        "travel_lane": "center_lane",
+        "intended_movement": "continue_straight",
+        "insured_signal_seen": false,
+        "insured_vehicle_seen_before_maneuver": true,
+        "claimant_reported_speed_change": "slight_acceleration",
+        "reason_for_speed_change": "maintain_position_ahead_of_merging_vehicle",
+        "evasive_action": "braked_and_moved_left",
+        "reported_insured_action": "entered_claimant_lane_without_sufficient_clearance"
+      },
+      "narrative": "The claimant reported traveling straight in the center lane when the insured vehicle began moving over from the right lane. The claimant acknowledged slightly accelerating because the claimant believed the vehicle was already positioned ahead of the insured and expected the insured to merge behind. The claimant then braked and moved left when it became apparent the insured continued into the lane."
+    }
+  ]
+}

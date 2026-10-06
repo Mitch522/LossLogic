@@ -1,0 +1,44 @@
+{
+  "diagnoses": [
+    {
+      "diagnosis_id": "MED-001",
+      "body_region": "cervical_spine",
+      "condition": "cervical_strain",
+      "pre_loss_condition_record_ids": []
+    },
+    {
+      "diagnosis_id": "MED-002",
+      "body_region": "lumbar_spine",
+      "condition": "lumbar_disc_disorder",
+      "pre_loss_condition_record_ids": [
+        "PRE-001",
+        "PRE-003",
+        "PRE-005"
+      ]
+    },
+    {
+      "diagnosis_id": "MED-003",
+      "body_region": "right_shoulder",
+      "condition": "chronic_rotator_cuff_tendinopathy",
+      "pre_loss_condition_record_ids": [
+        "PRE-001",
+        "PRE-002",
+        "PRE-005"
+      ]
+    },
+    {
+      "diagnosis_id": "MED-004",
+      "body_region": "right_knee",
+      "condition": "osteoarthritis",
+      "pre_loss_condition_record_ids": [
+        "PRE-004"
+      ]
+    },
+    {
+      "diagnosis_id": "MED-005",
+      "body_region": "left_wrist",
+      "condition": "distal_radius_fracture",
+      "pre_loss_condition_record_ids": []
+    }
+  ]
+}

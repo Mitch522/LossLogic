@@ -1,0 +1,119 @@
+{
+  "records": [
+    {
+      "record_id": "POST-001",
+      "date": "2026-03-19",
+      "days_from_loss": 1,
+      "provider_type": "urgent_care",
+      "reason_for_visit": "motor_vehicle_collision_follow_up",
+      "findings": {
+        "cervical_spine": {
+          "symptoms": "new_neck_pain_and_stiffness",
+          "objective_exam": "paracervical_spasm_and_reduced_range_of_motion",
+          "neurologic_deficit": false
+        },
+        "lumbar_spine": {
+          "symptoms": "increased_low_back_pain_with_new_right_leg_radiation",
+          "objective_exam": "positive_right_straight_leg_raise",
+          "strength": "5/5"
+        },
+        "right_shoulder": {
+          "symptoms": "increased_pain_with_overhead_activity",
+          "objective_exam": "full_range_of_motion_and_5/5_strength"
+        },
+        "right_knee": {
+          "symptoms": "knee_aching",
+          "objective_exam": "no_swelling_or_instability"
+        }
+      }
+    },
+    {
+      "record_id": "POST-002",
+      "date": "2026-03-26",
+      "days_from_loss": 8,
+      "provider_type": "physical_medicine",
+      "reason_for_visit": "persistent_post_collision_symptoms",
+      "findings": {
+        "cervical_spine": {
+          "symptoms": "persistent_neck_pain",
+          "objective_exam": "continued_muscle_spasm_and_restricted_rotation"
+        },
+        "lumbar_spine": {
+          "symptoms": "low_back_pain_with_right_leg_paresthesia",
+          "objective_exam": "positive_right_straight_leg_raise_and_reduced_right_ankle_reflex"
+        },
+        "right_shoulder": {
+          "symptoms": "subjectively_increased_pain",
+          "objective_exam": "full_range_of_motion_and_5/5_strength"
+        }
+      }
+    },
+    {
+      "record_id": "POST-003",
+      "date": "2026-04-08",
+      "days_from_loss": 21,
+      "provider_type": "radiology",
+      "reason_for_visit": "lumbar_mri",
+      "findings": {
+        "lumbar_spine": {
+          "l4_l5": "disc_bulge_with_new_right_lateral_recess_narrowing_and_contact_of_the_right_l5_nerve_root",
+          "l5_s1": "mild_disc_desiccation",
+          "comparison": "right_l5_nerve_root_contact_not_present_on_2025-10-19_mri",
+          "acute_fracture": false
+        }
+      }
+    },
+    {
+      "record_id": "POST-004",
+      "date": "2026-04-14",
+      "days_from_loss": 27,
+      "provider_type": "orthopedics",
+      "reason_for_visit": "right_shoulder_and_right_knee_evaluation",
+      "findings": {
+        "right_shoulder": {
+          "symptoms": "reported_increase_in_pain_frequency",
+          "range_of_motion": "full",
+          "strength": "5/5",
+          "imaging": "mild_chronic_tendinopathic_change_without_acute_abnormality"
+        },
+        "right_knee": {
+          "symptoms": "continued_aching",
+          "imaging": "moderate_medial_compartment_joint_space_narrowing_and_osteophytes",
+          "acute_findings": "none"
+        }
+      }
+    },
+    {
+      "record_id": "POST-005",
+      "date": "2026-05-12",
+      "days_from_loss": 55,
+      "provider_type": "physical_medicine",
+      "reason_for_visit": "follow_up",
+      "findings": {
+        "cervical_spine": {
+          "symptoms": "improving_neck_pain",
+          "objective_exam": "improved_range_of_motion_with_mild_residual_tenderness"
+        },
+        "lumbar_spine": {
+          "symptoms": "persistent_low_back_pain_with_intermittent_right_leg_paresthesia",
+          "objective_exam": "mild_persistent_right_ankle_reflex_reduction"
+        }
+      }
+    },
+    {
+      "record_id": "POST-006",
+      "date": "2026-06-27",
+      "days_from_loss": 101,
+      "provider_type": "emergency_department",
+      "reason_for_visit": "fall_from_bicycle",
+      "separate_event": true,
+      "findings": {
+        "left_wrist": {
+          "symptoms": "acute_pain_and_swelling_after_fall",
+          "imaging": "nondisplaced_distal_radius_fracture",
+          "diagnosis": "distal_radius_fracture"
+        }
+      }
+    }
+  ]
+}

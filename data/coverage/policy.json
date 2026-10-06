@@ -1,0 +1,27 @@
+{
+  "policy_id": "POL-DEMO-001",
+  "policy_status_on_loss_date": "ACTIVE",
+  "policy_period": {
+    "effective_date": "2026-01-01",
+    "expiration_date": "2027-01-01"
+  },
+  "insured_id": "INS-001",
+  "covered_vehicle": {
+    "vehicle_id": "VEH-INS-001",
+    "year": 2022,
+    "make": "Toyota",
+    "model": "RAV4"
+  },
+  "bodily_injury_liability": {
+    "included": true,
+    "per_person_limit": 100000,
+    "per_accident_limit": 300000
+  },
+  "coverage_issues": [],
+  "facts": {
+    "insured_was_permissive_driver": true,
+    "covered_vehicle_involved": true,
+    "loss_within_policy_period": true,
+    "known_exclusion_applies": false
+  }
+}

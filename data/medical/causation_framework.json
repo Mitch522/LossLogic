@@ -1,0 +1,34 @@
+{
+  "classifications": {
+    "RELATED_NEW": {
+      "description": "Condition first supported after the loss with evidence reasonably connecting its onset to the loss."
+    },
+    "AGGRAVATION": {
+      "description": "Established pre-loss condition with evidence of a material post-loss change reasonably attributable to the loss."
+    },
+    "PREEXISTING": {
+      "description": "Condition established before the loss without evidence supporting a material post-loss change attributable to the loss."
+    },
+    "DEGENERATIVE": {
+      "description": "Condition primarily characterized by chronic degenerative findings rather than an acute traumatic change."
+    },
+    "UNRELATED": {
+      "description": "Condition better explained by a separate event or cause."
+    }
+  },
+  "evaluation_dimensions": [
+    "pre_loss_documentation",
+    "temporal_relationship",
+    "subjective_change",
+    "objective_change",
+    "imaging_comparison",
+    "neurologic_change",
+    "intervening_event"
+  ],
+  "explainability": {
+    "cite_supporting_records": true,
+    "identify_pre_loss_baseline": true,
+    "identify_material_post_loss_change": true,
+    "identify_conflicting_evidence": true
+  }
+}
